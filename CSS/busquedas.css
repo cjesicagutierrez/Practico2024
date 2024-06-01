@@ -1,0 +1,224 @@
+/************/
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {
+    .section-busquedas {
+              height: 2300px;
+              width: 90%;
+              margin: 35px 5%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion-busqueda {
+              height: 600px;
+              width: 100%;
+              margin-bottom: 30px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-busqueda-texto {
+              height: 300px;
+              width: 95%;
+
+              padding: 5px 5px;
+              font-size: 1.5rem;
+              text-align: justify;
+    }
+
+    .descripcion-busquedas-img {
+              height: 250px;
+              width: 100%;
+              overflow: hidden;
+    }
+}
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 795px) {
+    .section-busquedas {
+              height: 1800px;
+              width: 90%;
+              margin: 35px 5%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion-busqueda {
+              height: 400px;
+              width: 100%;
+              margin-bottom: 50px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-busqueda-texto {
+              height: 250px;
+              width: 95%;
+
+              padding: 10px;
+              font-size: 1.5rem;
+              text-align: justify;
+    }
+
+    .descripcion-busquedas-img {
+              height: 250px;
+              width: 100%;
+              overflow: hidden;
+    }
+}
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 796px) and (max-width:991px) {
+    .section-busquedas {
+              height: 1100px;
+              width: 90%;
+              margin: 35px 5%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion-busqueda {
+              height: 200px;
+              width: 95%;
+              margin-bottom: 30px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-busqueda-texto {
+              height: 200px;
+              width: 60%;
+
+              padding: 20px;
+    }
+
+    .descripcion-busquedas-img {
+              height: 250px;
+              width: 40%;
+              overflow: hidden;
+    }
+}
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+    .section-busquedas {
+              height: 1100px;
+              width: 90%;
+              margin: 35px 5%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion-busqueda {
+              height: 200px;
+              width: 90%;
+              margin-left: 5%;
+              margin-bottom: 30px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-busqueda-texto {
+              height: 200px;
+              width: 60%;
+
+              padding: 20px;
+    }
+
+    .descripcion-busquedas-img {
+              height: 250px;
+              width: 40%;
+              overflow: hidden;
+    }
+}
+
+.nosotros-img,
+.aporte-img,
+.exploradores-img,
+.activar-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* bordes degradados */
+    border: 10px solid transparent;
+}
+
+/* nosotros */
+.nosotros-img {
+    background-image: url(../img/nosotros1.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+
+/* Tu aporte a la comunidad */
+.aporte-img {
+    background-image: url(../img/aporte-comunidad1.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #16A630 0%, #A6168C 100%) 1;
+}
+
+/* ¿Qué son los exploradores? */
+.exploradores-img {
+    background-image: url(../img/exploradores1.jpg);
+    border: 10px solid transparent;
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #1627a6 0%, #cfe1d3 100%) 1;
+}
+
+/* ¿Por qué es importante mantener activos a tus exploradores? */
+.activar-img {
+    background-image: url(../img/activar-exploradores1.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
+}
+
+/************/ 

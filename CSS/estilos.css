@@ -1,0 +1,387 @@
+/* relacionar con otro archivo css */
+@import url(index.css);
+@import url(iniciar_sesion.css);
+@import url(registrarse.css);
+@import url(tarjetas_descripcion.css);
+@import url(busquedas.css);
+@import url(exploradores.css);
+
+
+/* en este archivo aparecerán solo los atributos generales para los distintos tamaños de dispositivos */
+
+/* Selector universal*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ******* fuente google font 1 *************** */
+.montserrat-subrayada-regular {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ******* fuente google font 2 *************** */
+.titan-one-regular {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ******* fuente google font 3 *************** */
+.reddit-mono-enlace {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ******* fuente google font 4 *************** */
+.alkalami-regular {
+  font-family: "Alkalami", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+/* ********************** */
+
+.seccion-titulo {
+  /* son los titulos de las seccionnes ("Secciones", "Buscador")
+          esto va en la @media query*/
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.campos-obligatorios {
+  font-size: 15px;
+}
+
+/* boton activar estilo con un clic */
+.boton:active {
+  transform: scale(0.90);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+
+
+
+/* ******* inicio 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
+.navbar,
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border: none !important;
+  background-color: white;
+
+}
+
+/* enlace de Iniciar Sesion */
+.iniciar-sesion a {
+  background-color: #FFA202 !important;
+  color: white !important;
+}
+
+/* efecto hover en los enlaces */
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #FFA202 !important;
+}
+
+.navbar-header a {
+  padding: 0;
+  font-size: 5rem;
+}
+
+/* ******* fin 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
+
+
+
+/* ******* inicio seccion-1 enlaces a redes sociales *************** */
+.seccion-1-iconos {
+  height: 50px;
+  width: 100%;
+  /* centrar el elemento hijo */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enlaces-iconos {
+  height: 30px;
+  width: 30%;
+  /* centrar el elemento hijo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enlaces-iconos a:hover {
+  scale: 1.5;
+}
+
+
+/* lista de la sección buscador
+"teléfonos útiles", etc.. */
+.lista-temas {
+  width: 70%;
+  margin-top: 35px;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.lista-temas li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ******* fin seccion-1 enlaces a redes sociales *************** */
+
+
+/* ******* logo "NUMEROS" *************** */
+.span-1 {
+  color: #88E8EB;
+  transition: 1s;
+}
+
+.span-2 {
+  color: #88E8EB;
+  transition: 1s;
+}
+
+.span-3 {
+  color: #F1F5F5;
+  transition: 1s;
+}
+
+.span-4 {
+  color: #EFF749;
+  transition: 1s;
+}
+
+.span-5 {
+  color: #F1F5F5;
+  transition: 1s;
+}
+
+.span-6 {
+  color: #88E8EB;
+  transition: 1s;
+}
+
+.span-7 {
+  color: #88E8EB;
+  transition: 1s;
+}
+
+.span-hover:hover {
+  margin-bottom: 20px;
+}
+
+
+/* ******* inicio seccion-2 presentacion *************** */
+.efecto-cristal {
+  /* efecto cristal del div */
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  /* para que el efecto funcione en la mayoría de los navegadores */
+  -webkit-backdrop-filter: blur(0.4rem);
+}
+
+/* ******* fin seccion-2 presentacion *************** */
+
+
+
+
+/* ******* inicio seccion-3 secciones *************** */
+.card-frente {
+  background-color: white;
+
+  box-shadow: 10px 8px 10px rgb(97, 161, 200);
+  border: 2px rgb(97, 161, 200) solid;
+  /* animación */
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card-frente-texto h2,
+.card-frente-texto h3 {
+  color: rgb(97, 161, 200);
+  font-size: 45px;
+  text-align: center;
+}
+
+.card-dorso {
+  background-color: #0000FF;
+  box-shadow: 10px 8px 10px rgb(243, 244, 245);
+  position: absolute;
+  color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  /* animación */
+  transform: perspective(600px) rotateY(180deg);
+}
+
+/* el enlace del dorso de la card "ver mas..." */
+.etiqueta-enlace a {
+  color: white;
+}
+
+.producto:hover .card-frente {
+  /* animación */
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.producto:hover .card-dorso {
+  /* animación */
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+/* ******* fin seccion-3 secciones *************** */
+
+
+/* ******* inicio seccion-4 buscador *************** */
+/* ******* fin seccion-4 buscador *************** */
+
+
+
+
+/* ******* inicio seccion-5 apis datos *************** */
+.seccion-5-apis-datos {
+  min-height: 350px;
+  width: 100%;
+
+  /* centrar a los elemento hijos */
+  display: flex;
+  /* Convertimos al contenedor en flexbox */
+  flex-direction: column;
+  /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+  justify-content: center;
+  align-items: center;
+}
+
+.datos {
+  height: 300px;
+  width: 100%;
+  background-color: #EBEFF0;
+  /* centrar a los elemento hijos */
+  display: flex;
+  /* Convertimos al contenedor en flexbox */
+  flex-direction: row;
+  /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dato {
+  height: 100px;
+  width: 50%;
+
+  /* centrar a los elemento hijos */
+  display: flex;
+  /* Convertimos al contenedor en flexbox */
+  flex-direction: column;
+  /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ******* fin seccion-5 apis datos *************** */
+
+
+
+/* ********* INICIO DE FOOTER ********* */
+footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-color: #4bb123;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 2rem 8%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*     */
+  margin-bottom: 1rem;
+}
+
+.footer-lista-enlace {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  /*  quitar la decoracion a la lista */
+  list-style: none;
+}
+
+.footer-enlace {
+  color: white;
+  opacity: 0.6;
+  /*  quitar la decoracion a los enlaces */
+  text-decoration: none !important;
+}
+
+.footer-enlace:hover {
+  opacity: 1;
+  color: white;
+}
+
+.creditos {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.copyright {
+  color: white;
+  opacity: 0.3;
+  text-align: center;
+}
+
+
+/* ********* FIN DE FOOTER ********* */
+
+.flecha-arriba {
+  bottom: 5vh;
+  right: 5vw;
+  /*  */
+  position: fixed;
+
+
+} 

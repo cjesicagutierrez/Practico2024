@@ -1,0 +1,371 @@
+/* **** INICIO DE @MEDIA QUERYS ************************************************************************** */
+
+/* a modo práctico, cada @media tiene reescritas cada página */
+
+
+
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {
+
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** */
+    .section-iniciar-sesion {
+              height: 530px;
+              width: 92%;
+              margin: 20px 4% auto auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 350px;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              display: none;
+    }
+
+    .form-iniciar-sesion {
+              height: 370px;
+              width: 90%;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 70px;
+              width: 90%;
+              margin-top: 20px;
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 35px;
+              width: 100%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .iniciar-sesion-input label {
+              height: 30px;
+              width: auto;
+              font-size: 2.2rem;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              width: 50px;
+              width: 55%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              color: #333CEB;
+              font-size: 2rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+}
+
+
+
+
+
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** 
+    .seccion-4-buscador {
+             
+              width: 500px;
+              width: 100%;
+              /* centrar a los elementos hijos 
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }*/
+
+    .section-iniciar-sesion {
+              height: 600px;
+              width: 92%;
+              margin: 20px 4% auto auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 400px;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              display: none;
+    }
+
+    .form-iniciar-sesion {
+              height: 380px;
+              width: 90%;
+              margin-top: 40px;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 30px;
+              width: 90%;
+              margin-top: 20px;
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 25px;
+              width: 64%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .iniciar-sesion-input label {
+              height: 15px;
+              width: auto;
+              font-size: 1.8rem;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              height: 50px;
+              width: 40%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              color: #333CEB;
+              font-size: 2rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+}
+
+
+
+
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** */
+    .section-iniciar-sesion {
+              min-height: 580px;
+              width: 96%;
+              margin: 4% 2% auto 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 570px;
+              min-width: 350px;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              display: none;
+    }
+
+    .form-iniciar-sesion {
+              height: 400px;
+              width: 90%;
+              margin-left: 5%;
+              padding-top: 50px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 20px;
+              width: 100%;
+
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 35px;
+              width: 74%;
+              margin-bottom: 20px !important;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .iniciar-sesion-input label {
+              height: 20px;
+              width: auto;
+              font-size: 1.8rem;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              height: 50px;
+              width: 30%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              color: #333CEB;
+              font-size: 2rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+
+}
+
+
+/* Media query para tabletas MD 
+@media only screen and (min-width: 796px) and (max-width:991px) {}*/
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** */
+    .section-iniciar-sesion {
+              height: 600px;
+              width: 96%;
+              margin: 4% 2% auto 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 550px;
+              min-width: 350px;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              height: 550px;
+              width: 100%;
+              background-image: url(../img/formulario-iniciar-sesion2.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* Crear el borde 
+    border: 10px #EBE233 solid;*/
+
+    }
+
+    .form-iniciar-sesion {
+              height: 450px;
+              width: 90%;
+              margin-left: 5%;
+              padding-top: 35px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 50px;
+              width: 100%;
+              margin-top: 10px;
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 45px;
+              width: 64%;
+              margin-top: -10px;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              width: 70px;
+              width: 220px;
+              margin: 5px;
+              color: white;
+              font-size: 2.5rem;
+              padding: 9px 9px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              /* enlace "Crear cuenta" */
+              color: #333CEB;
+              font-size: 2.5rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+}
+
+.error {
+    background-color: yellow;
+    color: brown;
+    height: 20px;
+    width: 20px;
+} 

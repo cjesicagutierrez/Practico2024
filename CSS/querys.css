@@ -1,0 +1,1851 @@
+/* **** INICIO DE @MEDIA QUERYS ************************************************************************** */
+
+/* a modo práctico, cada @media tiene reescritas cada página */
+
+
+
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {
+
+    /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+    .navbar-header {
+              background-color: #4bb123;
+    }
+
+    .nav-marca-logo {
+              font-size: 3rem !important;
+              letter-spacing: 5px;
+              margin-top: 5px;
+    }
+
+    .boton {
+              /* son los enlaces dentro del menú desplegable de bootstrap */
+              font-size: 20px;
+    }
+
+    /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+
+
+    /*  inicio index.html section 1 | enlaces a redes sociales  */
+    .enlaces-iconos {
+              width: 80% !important;
+    }
+
+    /*  fin section index.html 1 | enlaces a redes sociales  */
+
+
+    .seccion-titulo {
+              /* son los titulos de las seccionnes ("Secciones", "Buscador")
+    esto va en la @media query*/
+              font-size: 22px;
+    }
+
+
+    /* ******* inicio index.html seccion-2 presentacion *************** */
+    .seccion-2-presentacion {
+              height: 500px;
+              width: 92%;
+
+              border-radius: 10px;
+              margin-left: 3%;
+              background-image: url(../img/presentacion.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* centrar el elemento hijo */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion {
+              /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+              height: 300px;
+              width: 80%;
+              /*  border: 3px rgb(124, 211, 232) solid; */
+              border-radius: 10px;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion h2 {
+              /*h2 Ciudad de Bs As...*/
+              color: #EB8B88;
+              font-size: 3rem;
+              text-align: center;
+    }
+
+
+    .seccion-2-presentacion a {
+              /* boton Registrarse */
+              background-color: #EB8B88;
+              height: 50px;
+              width: 60%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 7px 5px;
+              border-radius: 6px;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    /* ******* fin index.html seccion-2 presentacion *************** */
+
+
+
+    /* ******* inicio index.html seccion-3 galeria *************** */
+    .seccion-3-galeria {
+              /* Contiene el titulo y la galeria de productos */
+              height: 2850px;
+              width: 100%;
+              margin-top: 60px;
+    }
+
+    .galeria-productos {
+              /* Contiene las 6 tarjetas giratorias 
+y por eso, esta classe debe estar en las @medias querys*/
+              height: 330vh;
+              width: 90%;
+              margin-bottom: 30px;
+              margin-left: 4%;
+              /* centrar a los elemento hijos */
+              display: block;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+              justify-content: space-between;
+              /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item 
+    flex-wrap: wrap;*/
+              align-items: center;
+    }
+
+    .producto {
+              /* Contiene la card-frente y card-dorso */
+              height: 45vh;
+              width: 80%;
+              margin: 10vh 7%;
+              /* centrar a los elemento hijos */
+              display: flex;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              align-items: center;
+
+              /* ocultar todo lo que este fuera del div 
+overflow: hidden; */
+
+              /* animación 
+transform: translate(-50%, -50%); */
+    }
+
+    .card {
+              /* class de card-frente y card-dorso  */
+              position: absolute;
+              height: 45vh;
+              /* ancho proporcional a su elemento padre */
+              width: 80%;
+
+              /* animación */
+              /* no permitir elegir si el usuario debe ver la cara posterior */
+              backface-visibility: hidden;
+              /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+              transition: 1s;
+
+              /* ocultar todo lo que este fuera del div */
+              overflow: hidden;
+    }
+
+    .producto h2,
+    .producto h3 {
+              /* h2 y h3 de las tarjetas */
+              font-size: 25px;
+              color: black;
+    }
+
+    /* ******* fin index.html seccion-3 galeria *************** */
+
+
+    /* ******* inicio index.html seccion-4 buscador *************** */
+    .seccion-4-buscador {
+              height: 700px;
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .encontraste,
+    .prueba {
+              /* es el texto en la seccion del buscador 
+h2 "Si no encontraste lo que buscabas. Prueba aqui"
+*/
+              font-size: 20px;
+    }
+
+    .buscador-titulo,
+    .buscador-pregunta {
+              /*  */
+              background-color: #F8E7DB;
+              width: 90%;
+              padding-bottom: 3vh;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .buscador-prueba {
+              /* h2 "Prueba aqui..." y buscador */
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .buscador {
+              /* Contiene al input y al boton del buscador */
+              background-color: white;
+              height: 50px;
+              width: 80%;
+              margin-left: 2%;
+              border: 1px gray solid;
+              /* centrar el elemento hijo */
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              border-radius: 30px;
+    }
+
+    .buscador input {
+              background-color: transparent;
+              height: 40px;
+              width: 85%;
+              padding-left: 10px;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .buscador button {
+              background-color: rgb(97, 97, 112);
+              height: 45px;
+              width: 15%;
+              padding: 5px;
+              border: none;
+              border-radius: 70px;
+    }
+
+    /* ******* fin index.html seccion-4 buscador *************** */
+
+
+
+    /* *******    INICIO REGISTRARSE.HTML    *************** */
+    .section-registrarse {
+              height: 170vh;
+              width: 96%;
+              margin: 4% 2% auto 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .registrarse-formulario {
+              height: 160vh;
+              width: 100%;
+    }
+
+    .registrarse-img {
+              display: none;
+    }
+
+    .form-registrarse {
+              height: 165vh;
+              width: 90%;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .registrarse-input input,
+    select {
+              height: 8vh;
+              width: 80%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .registrarse-input {
+              /* en dispositivos muy pequeños,
+    el label se ubicará sobre el input */
+              height: 18vh;
+              width: 100%;
+              margin-top: 20px;
+              font-size: 2rem;
+              border-bottom: 2px #FFA202 solid;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+    }
+
+    .registrarse-input label {
+              height: 8vh;
+              width: auto;
+              font-size: 2rem;
+    }
+
+    .registrarse-condiciones {
+              height: 8vh;
+              width: 100%;
+              padding: 6% 0 4% 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: end;
+    }
+
+    .registrarse-condiciones input {
+              height: 8vh;
+              width: 6%;
+    }
+
+    .select-nacionalidad {
+              height: 8vh;
+              width: 78%;
+    }
+
+    .btn-registrarse {
+              background-color: #FFA202;
+              width: 8vh;
+              width: 80%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .registrarse-condiciones {
+              height: 8vh;
+              width: 100%;
+              margin-top: 4vh;
+              padding: 1% 0 4% 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+    }
+
+    /* *******    FIN REGISTRARSE.HTML    *************** */
+
+
+
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** */
+    .section-iniciar-sesion {
+              height: 60vh;
+              width: 92%;
+              margin: 4% 4% auto auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 70vh;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              display: none;
+    }
+
+    .form-iniciar-sesion {
+              height: 50vh;
+              width: 90%;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 5vh;
+              width: 90%;
+              margin-top: 20px;
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 4vh;
+              width: 64%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .iniciar-sesion-input label {
+              height: 5vh;
+              width: auto;
+              font-size: 1.8rem;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              width: 4vh;
+              width: 60%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              color: #333CEB;
+              font-size: 2rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+
+    /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+    .navbar-header {
+              background-color: #4bb123;
+    }
+
+    .nav-marca-logo {
+              font-size: 3.5rem;
+              letter-spacing: 20px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .boton {
+              /* son los enlaces dentro del menú desplegable de bootstrap */
+              font-size: 22px;
+    }
+
+    /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+
+
+
+    /*  inicio index.html section 1 | enlaces a redes sociales  */
+    .enlaces-iconos {
+              width: 80% !important;
+    }
+
+    /*  fin index.html section 1 | enlaces a redes sociales  */
+
+
+    .seccion-titulo {
+              /* son los titulos de las seccionnes ("Secciones", "Buscador")
+    esto va en la @media query*/
+              font-size: 32px;
+    }
+
+
+    /* ******* inicio index.html seccion-2 presentacion *************** */
+    .seccion-2-presentacion {
+              height: 500px;
+              width: 92%;
+
+              border-radius: 10px;
+              margin-left: 4%;
+              background-image: url(../img/presentacion.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* centrar el elemento hijo */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion {
+              /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+              height: 200px;
+              width: 80%;
+              /*  border: 3px rgb(124, 211, 232) solid; */
+              border-radius: 10px;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion h2 {
+              /*h2 Ciudad de Bs As...*/
+              color: #EB8B88;
+              font-size: 3.3rem;
+              text-align: center;
+    }
+
+
+    .seccion-2-presentacion a {
+              /* boton Registrarse */
+              background-color: #EB8B88;
+              width: 3vh;
+              width: 40%;
+              margin: 5px;
+              color: white;
+              font-size: 2rem;
+              padding: 7px 5px;
+              border-radius: 6px;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    /* ******* fin index.html seccion-2 presentacion *************** */
+
+    /* ******* inicio index.html seccion-3 galeria *************** */
+    .seccion-3-galeria {
+              /* Contiene el titulo y la galeria de productos */
+              height: 2880px;
+              margin-top: 50px;
+
+    }
+
+    .galeria-productos {
+              /* Contiene las 6 tarjetas giratorias 
+y por eso, esta classe debe estar en las @medias querys*/
+              height: 330vh;
+              width: 90%;
+              margin-left: 5%;
+              margin-bottom: 2vh;
+              /* centrar a los elemento hijos */
+              display: block;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+              justify-content: space-between;
+              /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item 
+    flex-wrap: wrap;*/
+              align-items: center;
+    }
+
+    .producto {
+              /* Contiene la card-frente y card-dorso */
+              height: 45vh;
+              width: 80%;
+              margin: 10vh 7%;
+              /* centrar a los elemento hijos */
+              display: flex;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              align-items: center;
+
+              /* ocultar todo lo que este fuera del div 
+overflow: hidden; */
+
+              /* animación 
+transform: translate(-50%, -50%); */
+    }
+
+    .card {
+              /* class de card-frente y card-dorso  */
+              position: absolute;
+              height: 45vh;
+              /* ancho proporcional a su elemento padre */
+              width: 80%;
+
+              /* animación */
+              /* no permitir elegir si el usuario debe ver la cara posterior */
+              backface-visibility: hidden;
+              /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+              transition: 1s;
+
+              /* ocultar todo lo que este fuera del div */
+              overflow: hidden;
+    }
+
+    .producto h2,
+    .producto h3 {
+              /* h2 y h3 de las tarjetas */
+              font-size: 25px;
+              color: black;
+    }
+
+    /* ******* fin index.html seccion-3 galeria *************** */
+
+
+
+
+    /* ******* inicio index.html seccion-4 buscador *************** */
+    .seccion-4-buscador {
+              height: 700px;
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .encontraste,
+    .prueba {
+              /* es el texto en la seccion del buscador 
+h2 "Si no encontraste lo que buscabas. Prueba aqui"
+*/
+              font-size: 20px;
+    }
+
+    .buscador-titulo,
+    .buscador-pregunta {
+              /*  */
+              background-color: #F8E7DB;
+              width: 90%;
+              padding-bottom: 3vh;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .buscador-prueba {
+              /* h2 "Prueba aqui..." y buscador */
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .buscador {
+              /* Contiene al input y al boton del buscador */
+              background-color: white;
+              height: 7vh;
+              width: 80%;
+              margin-left: 2%;
+              border: 1px gray solid;
+              /* centrar el elemento hijo */
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              border-radius: 30px;
+    }
+
+    .buscador input {
+              background-color: transparent;
+              height: 50px;
+              width: 85%;
+              padding-left: 10px;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .buscador button {
+              background-color: rgb(97, 97, 112);
+              height: 6.5vh;
+              width: 14%;
+              padding: 5px;
+              border: none;
+              border-radius: 70px;
+    }
+
+    /* ******* fin index.html seccion-4 buscador *************** */
+
+    /* *******    INICIO REGISTRARSE.HTML    *************** */
+    .section-registrarse {
+              min-height: 1200px;
+              width: 96%;
+              margin: 4% 2% 50px 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .registrarse-formulario {
+              min-height: 1180px;
+              width: 100%;
+    }
+
+    .registrarse-img {
+              display: none;
+    }
+
+    .form-registrarse {
+              height: 1180px;
+              width: 90%;
+              margin: 50px 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .registrarse-input input,
+    select {
+              height: 50px;
+              width: 100%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .registrarse-input {
+              /* en dispositivos muy pequeños,
+    el label se ubicará sobre el input */
+              height: 100px;
+              width: 100%;
+              margin-top: 10px;
+              font-size: 2rem;
+              border-bottom: 2px #FFA202 solid;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+    }
+
+    .registrarse-input label {
+              height: 40px;
+              width: auto;
+              margin-bottom: 10px;
+              font-size: 2.5rem;
+    }
+
+    .registrarse-condiciones {
+              height: 6vh;
+              width: 60% !important;
+              padding: 6% 0 4% 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: end;
+    }
+
+    .registrarse-condiciones input {
+              height: 5vh;
+              width: 6%;
+    }
+
+
+    .btn-registrarse {
+              background-color: #FFA202;
+              height: 50px;
+              width: 40%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .registrarse-condiciones {
+              height: 8vh;
+              width: 100%;
+              margin-top: 4vh;
+              padding: 1% 0 4% 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+    }
+
+    /* *******    FIN REGISTRARSE.HTML    *************** */
+
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** */
+    .seccion-4-buscador {
+              width: 50vh;
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .section-iniciar-sesion {
+              height: 60vh;
+              width: 92%;
+              margin: 4% 4% auto auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 70vh;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              display: none;
+    }
+
+    .form-iniciar-sesion {
+              height: 50vh;
+              width: 90%;
+              margin-top: 50px;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 5vh;
+              width: 90%;
+              margin-top: 20px;
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 4vh;
+              width: 64%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .iniciar-sesion-input label {
+              height: 5vh;
+              width: auto;
+              font-size: 1.8rem;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              height: 50px;
+              width: 40%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              color: #333CEB;
+              font-size: 2rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+}
+
+
+
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .seccion-titulo {
+              /* son los titulos de las seccionnes ("Secciones", "Buscador")
+              esto va en la @media query*/
+              font-size: 28px;
+    }
+
+
+    /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+    /* ******* inicio 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
+
+    .nav {
+              background-color: #4bb123;
+    }
+
+
+    .container-fluid {
+              background-color: #4bb123;
+              height: 10vh;
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .navbar-brand {
+              background-color: antiquewhite;
+              width: 300px;
+              margin-right: 20px;
+              text-align: center;
+    }
+
+    .navbar-collapse,
+    .collapse,
+    .navbar-header {
+              background-color: #4bb123 !important;
+              border: none !important;
+    }
+
+    /* efecto hover en los enlaces */
+    .navbar-inverse .navbar-nav>li>a:hover {
+              background-color: #FFA202 !important;
+    }
+
+    .nav-marca-logo {
+              /* span */
+              font-size: 3vh;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .boton {
+              /* son los enlaces dentro del menú desplegable de bootstrap */
+              font-size: 15px;
+              color: #F1F5F5 !important;
+    }
+
+    /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+
+    /*  inicio index.html section 1 | enlaces a redes sociales  */
+    .enlaces-iconos {
+              width: 60% !important;
+    }
+
+    /*  fin index.html section 1 | enlaces a redes sociales  */
+
+
+    /* ******* inicio index.html seccion-2 presentacion *************** */
+    .seccion-2-presentacion {
+              height: 400px;
+              width: 94%;
+
+              border-radius: 10px;
+              margin-left: 3%;
+              background-image: url(../img/presentacion.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* centrar el elemento hijo */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion {
+              /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+              height: 200px;
+              width: 90%;
+              /*  border: 3px rgb(124, 211, 232) solid; */
+              border-radius: 10px;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion h2 {
+              /*h2 Ciudad de Bs As...*/
+              color: #EB8B88;
+              font-size: 3.5rem;
+              text-align: center;
+    }
+
+
+    .seccion-2-presentacion a {
+              /* boton Registrarse */
+              background-color: #EB8B88;
+              height: 40px;
+              width: 200px !important;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 7px 5px;
+              border-radius: 6px;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    /* ******* fin index.html seccion-2 presentacion *************** */
+
+
+
+    /* ******* inicio index.html seccion-3 galeria *************** */
+    .seccion-3-galeria {
+              /* Contiene el titulo y la galeria de productos */
+              padding-top: 40px;
+              height: 2550px !important;
+    }
+
+    .galeria-productos {
+              /* Contiene las 6 tarjetas giratorias 
+    y por eso, esta classe debe estar en las @medias querys*/
+              height: 2500px !important;
+              width: 70%;
+              margin-left: 15%;
+              /* centrar a los elemento hijos */
+              display: block;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+              justify-content: space-between;
+              /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item 
+              flex-wrap: wrap;*/
+              align-items: center;
+    }
+
+    .producto {
+              /* Contiene la card-frente y card-dorso */
+              height: 350px;
+              width: 100%;
+              margin-bottom: 50px;
+              /* centrar a los elemento hijos */
+              display: flex;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              align-items: center;
+
+              /* ocultar todo lo que este fuera del div 
+    overflow: hidden; */
+
+              /* animación 
+    transform: translate(-50%, -50%); */
+    }
+
+    .card {
+              /* class de card-frente y card-dorso  */
+              position: absolute;
+              height: 340px;
+              /* ancho proporcional a su elemento padre */
+              width: 70%;
+
+              /* animación */
+              /* no permitir elegir si el usuario debe ver la cara posterior */
+              backface-visibility: hidden;
+              /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+              transition: 1s;
+
+              /* ocultar todo lo que este fuera del div */
+              overflow: hidden;
+    }
+
+    /* ******* fin index.html seccion-3 galeria *************** */
+
+
+    /* ******* inicio index.html seccion-4 buscador *************** */
+    .seccion-4-buscador {
+              height: 700px;
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .encontraste,
+    .prueba {
+              /* es el texto en la seccion del buscador 
+    h2 "Si no encontraste lo que buscabas. Prueba aqui"
+    */
+              font-size: 20px;
+    }
+
+    .buscador-titulo,
+    .buscador-pregunta {
+              /*  */
+              background-color: #F8E7DB;
+              width: 90%;
+              margin-left: 5%;
+              padding-bottom: 3vh;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .buscador-prueba {
+              /* h2 "Prueba aqui..." y buscador */
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .buscador {
+              /* Contiene al input y al boton del buscador */
+              background-color: white;
+              height: 7vh;
+              width: 80%;
+              margin-left: 2%;
+              border: 1px gray solid;
+              /* centrar el elemento hijo */
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              border-radius: 30px;
+    }
+
+    .buscador input {
+              background-color: transparent;
+              height: 4vh;
+              width: 85%;
+              padding-left: 10px;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .buscador button {
+              background-color: rgb(97, 97, 112);
+              height: 6.5vh;
+              width: 12%;
+              padding: 5px;
+              border: none;
+              border-radius: 70px;
+    }
+
+    /* ******* fin index.html seccion-4 buscador *************** */
+
+    /* *******    INICIO REGISTRARSE.HTML    *************** */
+    .section-registrarse {
+              min-height: 740px;
+              width: 96%;
+              margin: 4% 2% auto 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .registrarse-formulario {
+              height: 730px;
+              min-width: 350px;
+              width: 100%;
+    }
+
+    .registrarse-img {
+              display: none;
+    }
+
+    .form-registrarse {
+              height: 50vh;
+              width: 90%;
+              padding-top: 50px;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .registrarse-input input,
+    select {
+              height: 4vh;
+              width: 64%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .registrarse-input {
+              height: 5vh;
+              width: 100%;
+              margin-top: 20px;
+              font-size: 2.5rem;
+              border-bottom: 2px #FFA202 solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .registrarse-input label {
+              height: 5vh;
+              width: auto;
+              font-size: 1.8rem;
+    }
+
+    .registrarse-condiciones {
+              height: 6vh;
+              width: 40%;
+              padding: 6% 0 4% 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: end;
+    }
+
+    .registrarse-condiciones input {
+              height: 5vh;
+              width: 6%;
+    }
+
+    .select-nacionalidad {
+              height: 4vh;
+              width: 78%;
+    }
+
+    .input-edad {
+              height: 4vh;
+              width: 90%;
+    }
+
+    .input-fecha {
+              /* input del calendario */
+              width: 35% !important;
+              margin-left: auto;
+    }
+
+    .btn-registrarse {
+              background-color: #FFA202;
+              height: 50px;
+              width: 30%;
+              margin: 5px;
+              color: white;
+              font-size: 2rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .registrarse-condiciones {
+              height: 8vh;
+              width: 70%;
+              margin-top: 4vh;
+              padding: 1% 0 4% 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+    }
+
+    /* *******    FIN REGISTRARSE.HTML    *************** */
+
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** */
+    .section-iniciar-sesion {
+              min-height: 580px;
+              width: 96%;
+              margin: 4% 2% auto 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 570px;
+              min-width: 350px;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              display: none;
+    }
+
+    .form-iniciar-sesion {
+              height: 400px;
+              width: 90%;
+              margin-left: 5%;
+              padding-top: 50px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 20px;
+              width: 100%;
+
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 35px;
+              width: 74%;
+              margin-bottom: 20px !important;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .iniciar-sesion-input label {
+              height: 5vh;
+              width: auto;
+              font-size: 1.8rem;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              height: 50px;
+              width: 30%;
+              margin: 5px;
+              color: white;
+              font-size: 1.8rem;
+              padding: 3px 3px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              color: #333CEB;
+              font-size: 2rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+
+
+}
+
+
+/* Media query para tabletas MD 
+@media only screen and (min-width: 796px) and (max-width:991px) {}*/
+
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+    /* ******* inicio 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
+
+    .nav {
+              background-color: #4bb123;
+    }
+
+    .container-fluid {
+              background-color: #4bb123;
+              height: 10vh;
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .navbar-brand {
+              background-color: antiquewhite;
+              width: 300px;
+              margin-right: 20px;
+              text-align: center;
+    }
+
+    .navbar-collapse,
+    .collapse,
+    .navbar-header {
+              background-color: #4bb123 !important;
+              border: none !important;
+    }
+
+    .navbar-brand span {
+              font-size: 20px;
+    }
+
+    .boton {
+              /* son los enlaces dentro del menú desplegable de bootstrap */
+              font-size: 15px;
+              color: #F1F5F5 !important;
+    }
+
+    /* hamburguesa | home,secciones,buscar,contaco,iniciarsesion */
+    .navbar-nav {
+              font-size: 2rem;
+              border-left: 2px #025FFF solid;
+    }
+
+    /* efecto hover en los enlaces */
+    .navbar-inverse .navbar-nav>li>a:hover {
+              background-color: #FFA202 !important;
+    }
+
+
+    /* ******* inicio index.html seccion-2 presentacion *************** */
+    .seccion-2-presentacion {
+              height: 80vh;
+              width: 80%;
+
+              border-radius: 10px;
+              margin-left: 10%;
+              background-image: url(../img/presentacion.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* centrar el elemento hijo */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion {
+              /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+              height: 30vh;
+              width: 80%;
+              /*  border: 3px rgb(124, 211, 232) solid; */
+              border-radius: 10px;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .cuadro-presentacion h2 {
+              /* h2 "Ciudad de Bs As..." */
+              color: #EB8B88;
+              font-size: 5rem;
+              text-align: center;
+    }
+
+    .nav-marca-logo {
+
+              font-size: 4rem;
+              letter-spacing: 15px;
+              /* centrar el elemento hijo */
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .seccion-2-presentacion a {
+              background-color: #EB8B88;
+              width: 5vh;
+              width: 20%;
+              margin: 5px;
+              color: white;
+              font-size: 2.5rem;
+              padding: 7px 5px;
+              border-radius: 6px;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    /* ******* fin index.html seccion-2 presentacion *************** */
+
+
+    /* ******* inicio index.html seccion-3 galeria *************** */
+    .seccion-3-galeria {
+              /* Contiene el titulo y la galeria de productos */
+              margin: 5vh 0;
+              height: 100vh;
+              width: 100%;
+              /* background-image: url(../img/galeria.jpg); */
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+
+              /* centrar a los elemento hijos */
+              display: flex;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              /* on esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+              justify-content: space-around;
+              align-items: center;
+    }
+
+    .galeria-productos {
+              /* Contiene las 6 tarjetas giratorias 
+  y por eso, esta classe debe estar en las @medias querys*/
+              height: 80vh;
+              width: 90%;
+              /* centrar a los elemento hijos */
+              display: flex;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: row;
+              /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+              justify-content: space-between;
+              /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item */
+              flex-wrap: wrap;
+    }
+
+
+    .producto {
+              /* Contiene la card-frente y card-dorso */
+              height: 35vh;
+              width: 32%;
+              /* centrar a los elemento hijos */
+              display: flex;
+              /* Convertimos al contenedor en flexbox */
+              flex-direction: column;
+              align-items: center;
+
+              /* ocultar todo lo que este fuera del div 
+            overflow: hidden; */
+
+              /* animación 
+            transform: translate(-50%, -50%); */
+    }
+
+    .card {
+              /* class de card-frente y card-dorso  */
+              position: absolute;
+              height: 35vh;
+              /* ancho proporcional a su elemento padre */
+              width: 28%;
+
+              /* animación */
+              /* no permitir elegir si el usuario debe ver la cara posterior */
+              backface-visibility: hidden;
+              /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+              transition: 1s;
+
+              /* ocultar todo lo que este fuera del div */
+              overflow: hidden;
+    }
+
+    /* ******* fin index.html seccion-3 secciones *************** */
+
+
+    /* ******* inicio index.html seccion-4 buscador *************** */
+    .seccion-4-buscador {
+              height: 500px;
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .buscador-titulo,
+    .buscador-pregunta {
+              background-color: #F8E7DB;
+              width: 90%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+
+
+    .buscador-prueba {
+              width: 100%;
+              /* centrar a los elementos hijos */
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+
+    .buscador {
+              background-color: white;
+              height: 5vh;
+              width: 30%;
+              border: 1px gray solid;
+              margin-left: 8%;
+              /* centrar el elemento hijo */
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              border-radius: 30px;
+    }
+
+    .buscador input {
+              background-color: transparent;
+              height: 4vh;
+              width: 85%;
+              padding-left: 10px;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .buscador button {
+              background-color: rgb(97, 97, 112);
+              height: 4.5vh;
+              width: 9%;
+              padding: 5px;
+              border: none;
+              border-radius: 70px;
+    }
+
+
+
+    /* ******* fin index.html seccion-4 buscador *************** */
+
+    /* *******    INICIO REGISTRARSE.HTML    *************** */
+    .section-registrarse {
+              height: 95vh;
+              width: 96%;
+              margin: 4% 2% auto 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: flex-start;
+    }
+
+    .registrarse-formulario {
+              height: 60vh;
+              min-width: 350px;
+              width: 100%;
+    }
+
+    .registrarse-img {
+              background-color: #a4eb88;
+              height: 90vh;
+              width: 100%;
+
+              background-image: url(../img/formulario-registrarse.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* Crear el borde 
+    border: 10px #a4eb88 solid;*/
+    }
+
+    .form-registrarse {
+              height: 50vh;
+              width: 90%;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .registrarse-input input,
+    select {
+              height: 4vh;
+              width: 64%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .registrarse-input {
+              height: 5vh;
+              width: 100%;
+              margin-top: 20px;
+              font-size: 2.5rem;
+              border-bottom: 2px #FFA202 solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .registrarse-input label {
+              height: 5vh;
+              width: auto;
+    }
+
+    .registrarse-condiciones {
+              height: 6vh;
+              width: 40%;
+              padding: 6% 0 4% 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: end;
+    }
+
+    .registrarse-condiciones input {
+              height: 5vh;
+              width: 6%;
+    }
+
+    .select-nacionalidad {
+              height: 4vh;
+              width: 78%;
+    }
+
+    .input-edad {
+              height: 4vh;
+              width: 90% !important;
+    }
+
+    .input-fecha {
+              /* input del calendario */
+              width: 35% !important;
+              margin-left: auto;
+    }
+
+    .btn-registrarse {
+              background-color: #FFA202;
+              width: 5vh;
+              width: 30%;
+              margin: 5px;
+              color: white;
+              font-size: 2.5rem;
+              padding: 7px 5px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+
+    .registrarse-condiciones {
+              height: 8vh;
+              width: 60% !important;
+              margin-top: 4vh !important;
+              padding: 1% 0 4% 0 !important;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+    }
+
+    /* *******    FIN REGISTRARSE.HTML    *************** */
+
+
+
+    /* *******    INICIO INICIAR_SESION.HTML    *************** */
+    .section-iniciar-sesion {
+              height: 95vh;
+              width: 96%;
+              margin: 4% 2% auto 2%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+    }
+
+    .iniciar-sesion-formulario {
+              height: 70vh;
+              min-width: 350px;
+              width: 100%;
+    }
+
+    .iniciar-sesion-img {
+              background-color: #EBE233;
+              height: 90vh;
+              width: 100%;
+              background-image: url(../img/formulario-iniciar-sesion2.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* Crear el borde 
+    border: 10px #EBE233 solid;*/
+
+    }
+
+    .form-iniciar-sesion {
+              height: 50vh;
+              width: 90%;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input {
+              height: 5vh;
+              width: 100%;
+              margin-top: 20px;
+              font-size: 2.5rem;
+              border-bottom: 2px #333CEB solid;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+    }
+
+    .iniciar-sesion-input input {
+              height: 4vh;
+              width: 64%;
+              text-align: center;
+              /* quitar decoraciones del input */
+              border: 0;
+              outline: none;
+    }
+
+    .btn-iniciar-sesion {
+              background-color: #333CEB;
+              width: 5vh;
+              width: 30%;
+              margin: 5px;
+              color: white;
+              font-size: 2.5rem;
+              padding: 7px 5px;
+              border: none;
+              text-align: center;
+              /* quitar decoracion al enlace */
+              text-decoration: none;
+    }
+
+    .iniciar-sesion-formulario a {
+              color: #333CEB;
+              font-size: 2rem;
+    }
+
+    /* *******    FIN INICIAR_SESION.HTML    *************** */
+}
+
+
+
+
+
+/* *******    FORMULARIOS    *************** */
+.titulo-de-formulario,
+fieldset {
+    background-color: #EBE233;
+    font-size: 20px;
+    /* quitar decoraciones del input */
+    border: 0;
+    outline: none;
+}

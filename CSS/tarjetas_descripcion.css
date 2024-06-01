@@ -1,0 +1,244 @@
+/************/
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {
+    .section-secciones {
+              height: 1900px;
+              width: 95%;
+              margin: 35px 2%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion {
+              height: 450px;
+              width: 100%;
+              margin-bottom: 20px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-tarjetas-texto {
+              height: 250px;
+              width: 95%;
+
+              padding: 10px;
+              font-size: 1.5rem;
+              text-align: justify;
+    }
+
+    .descripcion-tarjetas-img {
+              height: 250px;
+              width: 100%;
+              overflow: hidden;
+    }
+}
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 795px) {
+    .section-secciones {
+              height: 2800px;
+              width: 90%;
+              margin: 35px 5%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion {
+              height: 400px;
+              width: 100%;
+              margin-bottom: 50px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-tarjetas-texto {
+              height: 250px;
+              width: 95%;
+
+              padding: 10px;
+              font-size: 1.5rem;
+              text-align: justify;
+    }
+
+    .descripcion-tarjetas-img {
+              height: 250px;
+              width: 100%;
+              overflow: hidden;
+    }
+}
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 796px) and (max-width:991px) {
+    .section-secciones {
+              height: 1650px;
+              width: 90%;
+              margin: 35px 5%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion {
+              height: 200px;
+              width: 90%;
+              margin-bottom: 30px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-tarjetas-texto {
+              height: 200px;
+              width: 65%;
+
+              padding: 20px;
+    }
+
+    .descripcion-tarjetas-img {
+              height: 250px;
+              width: 35%;
+              overflow: hidden;
+    }
+
+}
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+    .section-secciones {
+              height: 1600px;
+              width: 90%;
+              margin: 35px 5%;
+
+              display: flex;
+              /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+              flex-direction: column;
+              /* los hijos mas directos se posicionarán en una columna */
+              justify-content: space-around;
+              /* propiedad necesaria para posicionar en fila los hijos mas directos */
+              align-items: center;
+    }
+
+    /* div contiene al div nosotros-descripcion y al div nosotros-img */
+    .descripcion {
+              height: 200px;
+              width: 100%;
+              margin-bottom: 30px;
+
+              border: 2px #E5E7E9 solid;
+
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+    }
+
+    .descripcion-tarjetas-texto {
+              height: 200px;
+              width: 65%;
+
+              padding: 20px;
+              text-align: justify;
+    }
+
+    .descripcion-tarjetas-img {
+              height: 250px;
+              width: 35%;
+    }
+}
+
+
+/* definiciones generales */
+.transporte-img,
+.salud-img,
+.educacion-img,
+.seguridad-img,
+.comunidad-img,
+.redes-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* bordes degradados */
+    border: 10px solid transparent;
+    /* Creas el borde */
+    /* agregas el gradiente a las esquinas */
+}
+
+/* transporte */
+.transporte-img {
+    background-image: url(../img/transporte.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+
+/* salud */
+.salud-img {
+    background-image: url(../img/hospital.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #16A630 0%, #A6168C 100%) 1;
+}
+
+/* educación */
+.educacion-img {
+    background-image: url(../img/centros-educativos.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #1627a6 0%, #cfe1d3 100%) 1;
+}
+
+/* seguridad */
+.seguridad-img {
+    background-image: url(../img/seguridad.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
+}
+
+/* comunidad */
+.comunidad-img {
+    background-image: url(../img/comunidad.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
+}
+
+/* redes */
+.redes-img {
+    background-image: url(../img/yo.jpg);
+    /* Creas el borde */
+    border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
+}
+
+/************/ 

@@ -1,0 +1,600 @@
+/************/
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {
+    /* seccion 1 | api exploradores */
+  
+    /* sección */
+  
+    /* Contiene a los div
+            contenedor-titulo-desactivado
+            div-api-exploradores
+            deben estar ubicados en una columna */
+    .section-api-exploradores {
+      background-color: black;
+      color: white;
+  
+      min-height: 1500px;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 50px;
+      margin-bottom: 70px;
+  
+      border: 2px black solid;
+  
+      background-image: url(../img/seccion-exploradores.jpg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-between;
+      text-align: center;
+  
+      overflow: hidden;
+    }
+  
+    .api-exploradores-titulo h2 {
+      color: rgb(70, 103, 211);
+      font-size: 3.2rem;
+      margin: 32px auto;
+    }
+  
+    .api-exploradores-titulo p {
+      font-size: 1.5rem;
+    }
+  
+    /* contiene a los div perfil-datos
+  que son las respuestas de la API.
+  En dispositivos pequeños, estarán ubicados
+  de a tres por línea horizontal */
+    .div-api-exploradores {
+      height: 1450px;
+      width: 100%;
+      margin-top: 10px;
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    /* contiene a la img del perfil
+      y el div perfil-datos, que es la descripción del perfil.
+  En dispositivos pequeños, estos elementos
+  estarán ubicados en una línea horizontal */
+    .perfil {
+      background-color: black;
+      height: 200px;
+      width: 98%;
+      padding: 10px 4px;
+      font-size: 1.1rem;
+      border: 2px blueviolet double;
+      border-radius: 20px;
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: row;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      /* centrar los elementos */
+      align-items: center;
+      /* centrar el texto */
+      text-align: center;
+    }
+  
+    .perfil img {
+      background-color: white;
+      height: 80px;
+      width: 80px;
+      padding: 5px;
+      border: 2px rgb(47, 32, 208) solid;
+      border-radius: 130px;
+    }
+  
+    /* Es el texto de la descripción del perfil */
+    .perfil-datos {
+      height: 180px;
+    }
+  
+  
+    .perfil li {
+      color: white;
+      /* espacio entre líneas */
+      line-height: 17px;
+      /* quitando decoraciones a los elementos de la lista */
+      list-style-type: none;
+    }
+  
+    /* Este div contiene el boton "Activarlos" y el enlace "Seleccionar otros" */
+    .api-exploradores-enlaces {
+      height: 120px;
+      width: 95%;
+      margin-left: 2%;
+  
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+  
+    }
+  
+  
+    /* boton "Activarlos" */
+    .enlace-activarlos {
+      background-color: #4bb123;
+      height: auto;
+      width: auto;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* enlace "Seleccionar otros" */
+    .enlace-seleccionar-otros {
+      background-color: #FFA202;
+      height: auto;
+      width: auto;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
+  /* Media query para teléfonos STANDAR móviles SM XS */
+  @media only screen and (min-width: 401px) and (max-width: 795px) {
+    /* seccion 1 | api exploradores */
+  
+    /* sección */
+  
+    /* Contiene a los div
+            contenedor-titulo-desactivado
+            div-api-exploradores
+            deben estar ubicados en una columna */
+    .section-api-exploradores {
+      background-color: black;
+      color: white;
+  
+      min-height: 1500px;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 50px;
+      margin-bottom: 70px;
+  
+      border: 2px black solid;
+  
+      background-image: url(../img/seccion-exploradores.jpg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-between;
+      text-align: center;
+  
+      overflow: hidden;
+    }
+  
+    .api-exploradores-titulo h2 {
+      color: rgb(70, 103, 211);
+      font-size: 3.2rem;
+      margin: 32px auto;
+    }
+  
+    .api-exploradores-titulo p {
+      font-size: 1.5rem;
+    }
+  
+    /* contiene a los div perfil-datos
+  que son las respuestas de la API.
+  En dispositivos pequeños, estarán ubicados
+  de a tres por línea horizontal */
+    .div-api-exploradores {
+      height: 1450px;
+      width: 100%;
+      margin-top: 10px;
+  
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    /* contiene a la img del perfil
+              y el div perfil-datos, que es la descripción del perfil.
+  En dispositivos pequeños, estos elementos
+  estarán ubicados en una línea horizontal */
+    .perfil {
+      background-color: black;
+      height: 200px;
+      width: 90%;
+      padding: 10px 5px;
+      font-size: 1.1rem;
+      border: 2px blueviolet double;
+      border-radius: 20px;
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: row;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      /* centrar los elementos */
+      align-items: center;
+      /* centrar el texto */
+      text-align: center;
+    }
+  
+    .perfil img {
+      background-color: white;
+      height: 150px;
+      width: 150px;
+      padding: 5px;
+      border: 2px rgb(47, 32, 208) solid;
+      border-radius: 130px;
+    }
+  
+    /* Es el texto de la descripción del perfil */
+    .perfil-datos {
+      height: 180px;
+    }
+  
+  
+    .perfil li {
+      color: white;
+      /* espacio entre líneas */
+      line-height: 17px;
+      /* quitando decoraciones a los elementos de la lista */
+      list-style-type: none;
+    }
+  
+    /* Este div contiene el boton "Activarlos" y el enlace "Seleccionar otros" */
+    .api-exploradores-enlaces {
+      height: 100px;
+      width: 80%;
+      margin-left: 10%;
+  
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: row;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+  
+    }
+  
+  
+    /* boton "Activarlos" */
+    .enlace-activarlos {
+      background-color: #4bb123;
+      height: auto;
+      width: auto;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* enlace "Seleccionar otros" */
+    .enlace-seleccionar-otros {
+      background-color: #FFA202;
+      height: auto;
+      width: auto;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
+  /* Media query para tabletas MD */
+  @media only screen and (min-width: 796px) and (max-width:991px) {
+    /* seccion 1 | api exploradores */
+  
+    /* sección */
+  
+    /* Contiene a los div
+            contenedor-titulo-desactivado
+            div-api-exploradores
+            deben estar ubicados en una columna */
+    .section-api-exploradores {
+      background-color: black;
+      color: white;
+  
+      height: auto;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 50px;
+      margin-bottom: 70px;
+  
+      border: 2px black solid;
+  
+      background-image: url(../img/seccion-exploradores.jpg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-between;
+      text-align: center;
+  
+      overflow: hidden;
+    }
+  
+    .api-exploradores-titulo h2 {
+      color: rgb(70, 103, 211);
+      font-size: 3.2rem;
+      margin: 32px auto;
+    }
+  
+    .api-exploradores-titulo p {
+      font-size: 1.5rem;
+    }
+  
+    /* contiene a los div perfil-datos
+  que son las respuestas de la API.
+  En dispositivos medianos y grandes, estarán ubicados
+  de a tres por línea vertical */
+    .div-api-exploradores {
+      height: 900px;
+      width: 100%;
+      margin-top: 10px;
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: row;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .perfil {
+      background-color: black;
+      height: 350px;
+      width: 30%;
+      padding: 10px auto;
+      padding-bottom: 25px;
+  
+      font-size: 1.1rem;
+      border: 2px blueviolet double;
+      border-radius: 20px;
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      /* centrar los elementos */
+      align-items: center;
+      /* centrar el texto */
+      text-align: center;
+    }
+  
+    .perfil img {
+      background-color: white;
+      height: 150px;
+      width: 150px;
+      padding: 5px;
+      border: 2px rgb(47, 32, 208) solid;
+      border-radius: 130px;
+    }
+  
+  
+    .perfil-datos {
+      height: 250px;
+      margin-top: 10px;
+    }
+  
+  
+    .perfil li {
+      color: white;
+      /* espacio entre líneas */
+      line-height: 17px;
+      /* quitando decoraciones a los elementos de la lista */
+      list-style-type: none;
+    }
+  
+    /* Este div contiene el boton "Activarlos" y el enlace "Seleccionar otros" */
+    .api-exploradores-enlaces {
+      height: 100px;
+      width: 60%;
+      margin-left: 20%;
+  
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: row;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+  
+    }
+  
+  
+    /* boton "Activarlos" */
+    .enlace-activarlos {
+      background-color: #4bb123;
+      height: 38px;
+      width: 100px;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* enlace "Seleccionar otros" */
+    .enlace-seleccionar-otros {
+      background-color: #FFA202;
+      height: 38px;
+      width: 150px;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
+  /* Media query para dispositivos de escritorio LG */
+  @media only screen and (min-width: 992px) {
+  
+    /* seccion 1 | api exploradores */
+  
+    /* sección */
+  
+    /* Contiene a los div
+            contenedor-titulo-desactivado
+            div-api-exploradores
+            deben estar ubicados en una columna */
+    .section-api-exploradores {
+      background-color: black;
+      color: white;
+  
+      height: auto;
+      width: 82%;
+      margin-left: 9%;
+      margin-top: 50px;
+      margin-bottom: 70px;
+  
+      border: 2px black solid;
+  
+      background-image: url(../img/seccion-exploradores.jpg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-between;
+      text-align: center;
+  
+      overflow: hidden;
+    }
+  
+    .api-exploradores-titulo h2 {
+      color: rgb(70, 103, 211);
+      font-size: 3.2rem;
+      margin: 32px auto;
+    }
+  
+    .api-exploradores-titulo p {
+      font-size: 1.5rem;
+    }
+  
+    /* contiene a los div perfil-datos
+  que son las respuestas de la API.
+  En dispositivos medianos y grandes, estarán ubicados
+  de a tres por línea vertical */
+    .div-api-exploradores {
+      height: 900px;
+      width: 100%;
+      margin-top: 30px;
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: row;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .perfil {
+      background-color: black;
+      height: 380px;
+      width: 28%;
+      padding: 10px auto;
+      padding-bottom: 25px;
+  
+      border: 2px blueviolet double;
+      border-radius: 20px;
+      /*pone todo en una misma columna */
+      display: flex;
+      flex-direction: column;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      /* centrar los elementos */
+      align-items: center;
+      /* centrar el texto */
+      text-align: center;
+    }
+  
+    .perfil img {
+      background-color: white;
+      height: 150px;
+      width: 150px;
+      padding: 5px;
+      border: 2px rgb(47, 32, 208) solid;
+      border-radius: 130px;
+    }
+  
+  
+    .perfil-datos {
+      height: 250px;
+      margin-top: 20px;
+    }
+  
+  
+    .perfil li {
+      color: white;
+      /* quitando decoraciones a los elementos de la lista */
+      list-style-type: none;
+    }
+  
+    /* Este div contiene el boton "Activarlos" y el enlace "Seleccionar otros" */
+    .api-exploradores-enlaces {
+      height: 100px;
+      width: 60%;
+      margin-left: 20%;
+  
+      /*pone todo en una misma linea*/
+      display: flex;
+      flex-direction: row;
+      /*para que distribuya el enlace en espacio parejo*/
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+  
+    }
+  
+  
+    /* boton "Activarlos" */
+    .enlace-activarlos {
+      background-color: #4bb123;
+      height: 38px;
+      width: 100px;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* enlace "Seleccionar otros" */
+    .enlace-seleccionar-otros {
+      background-color: #FFA202;
+      height: 38px;
+      width: 150px;
+      padding: 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  
+  }
+  
+  
+  /*   */
+  .contenedor-titulo-activado {
+    display: block;
+  }
+  
+  .contenedor-titulo-desactivado {
+    display: none;
+  } 
