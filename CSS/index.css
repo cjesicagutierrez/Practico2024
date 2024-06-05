@@ -51,7 +51,7 @@
   
       border-radius: 10px;
       margin-left: 3%;
-      background-image: url(../img/presentacion.jpg);
+      background-image: url(../IMG/presentacion.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -267,42 +267,42 @@
     /* En dispositivos pequeños las img de las tarjetas
    se ubican en los div card-frente */
     .card-frente-transporte {
-      background-image: url(../img/card-transporte1.jpg);
+      background-image: url(../IMG/card-transporte1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-salud {
-      background-image: url(../img/card-salud1.jpg);
+      background-image: url(../IMG/card-salud1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-educacion {
-      background-image: url(../img/card-educacion1.jpg);
+      background-image: url(../IMG/card-educacion1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-seguridad {
-      background-image: url(../img/card-seguridad1.jpg);
+      background-image: url(../IMG/card-seguridad1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-comunidad {
-      background-image: url(../img/card-comunidad1.jpg);
+      background-image: url(../IMG/card-comunidad1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-redes {
-      background-image: url(../img/card-redes1.jpg);
+      background-image: url(../IMG/card-redes1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
@@ -445,7 +445,7 @@
   
       border-radius: 10px;
       margin-left: 4%;
-      background-image: url(../img/presentacion.jpg);
+      background-image: url(../IMG/presentacion.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -656,42 +656,42 @@
     /* En dispositivos pequeños las img de las tarjetas
    se ubican en los div card-frente */
     .card-frente-transporte {
-      background-image: url(../img/card-transporte1.jpg);
+      background-image: url(../IMG/card-transporte1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-salud {
-      background-image: url(../img/card-salud1.jpg);
+      background-image: url(../IMG/card-salud1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-educacion {
-      background-image: url(../img/card-educacion1.jpg);
+      background-image: url(../IMG/card-educacion1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-seguridad {
-      background-image: url(../img/card-seguridad1.jpg);
+      background-image: url(../IMG/card-seguridad1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-comunidad {
-      background-image: url(../img/card-comunidad1.jpg);
+      background-image: url(../IMG/card-comunidad1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
     }
   
     .card-frente-redes {
-      background-image: url(../img/card-redes1.jpg);
+      background-image: url(../IMG/card-redes1.jpg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
@@ -870,7 +870,7 @@
   
       border-radius: 10px;
       margin-left: 3%;
-      background-image: url(../img/presentacion.jpg);
+      background-image: url(../IMG/presentacion.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1090,27 +1090,27 @@
     }
   
     .producto-transporte-img {
-      background-image: url(../img/card-transporte1.jpg);
+      background-image: url(../IMG/card-transporte1.jpg);
     }
   
     .producto-educacion-img {
-      background-image: url(../img/card-educacion1.jpg);
+      background-image: url(../IMG/card-educacion1.jpg);
     }
   
     .producto-salud-img {
-      background-image: url(../img/card-salud1.jpg);
+      background-image: url(../IMG/card-salud1.jpg);
     }
   
     .producto-seguridad-img {
-      background-image: url(../img/card-seguridad1.jpg);
+      background-image: url(../IMG/card-seguridad1.jpg);
     }
   
     .producto-comunidad-img {
-      background-image: url(../img/card-comunidad1.jpg);
+      background-image: url(../IMG/card-comunidad1.jpg);
     }
   
     .producto-redes-img {
-      background-image: url(../img/card-redes1.jpg);
+      background-image: url(../IMG/card-redes1.jpg);
     }
   
     /* ******* fin index.html seccion-3 galeria *************** */
@@ -1279,7 +1279,7 @@
   
       border-radius: 10px;
       margin-left: 10%;
-      background-image: url(../img/presentacion.jpg);
+      background-image: url(../IMG/presentacion.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1503,27 +1503,27 @@
     }
   
     .producto-transporte-img {
-      background-image: url(../img/card-transporte1.jpg);
+      background-image: url(../IMG/card-transporte1.jpg);
     }
   
     .producto-educacion-img {
-      background-image: url(../img/card-educacion1.jpg);
+      background-image: url(../IMG/card-educacion1.jpg);
     }
   
     .producto-salud-img {
-      background-image: url(../img/card-salud1.jpg);
+      background-image: url(../IMG/card-salud1.jpg);
     }
   
     .producto-seguridad-img {
-      background-image: url(../img/card-seguridad1.jpg);
+      background-image: url(../IMG/card-seguridad1.jpg);
     }
   
     .producto-comunidad-img {
-      background-image: url(../img/card-comunidad1.jpg);
+      background-image: url(../IMG/card-comunidad1.jpg);
     }
   
     .producto-redes-img {
-      background-image: url(../img/card-redes1.jpg);
+      background-image: url(../IMG/card-redes1.jpg);
     }
   
     /* ******* fin index.html seccion-3 secciones *************** */

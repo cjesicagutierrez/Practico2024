@@ -201,42 +201,42 @@
 
 /* transporte */
 .transporte-img {
-    background-image: url(../img/transporte.jpg);
+    background-image: url(../IMG/transporte.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
 }
 
 /* salud */
 .salud-img {
-    background-image: url(../img/hospital.jpg);
+    background-image: url(../IMG/hospital.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #16A630 0%, #A6168C 100%) 1;
 }
 
 /* educación */
 .educacion-img {
-    background-image: url(../img/centros-educativos.jpg);
+    background-image: url(../IMG/centros-educativos.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #1627a6 0%, #cfe1d3 100%) 1;
 }
 
 /* seguridad */
 .seguridad-img {
-    background-image: url(../img/seguridad.jpg);
+    background-image: url(../IMG/seguridad.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
 }
 
 /* comunidad */
 .comunidad-img {
-    background-image: url(../img/comunidad.jpg);
+    background-image: url(../IMG/comunidad.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
 }
 
 /* redes */
 .redes-img {
-    background-image: url(../img/yo.jpg);
+    background-image: url(../IMG/yo.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
 }

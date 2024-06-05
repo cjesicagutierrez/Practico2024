@@ -194,21 +194,21 @@
 
 /* nosotros */
 .nosotros-img {
-    background-image: url(../img/nosotros1.jpg);
+    background-image: url(../IMG/nosotros1.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
 }
 
 /* Tu aporte a la comunidad */
 .aporte-img {
-    background-image: url(../img/aporte-comunidad1.jpg);
+    background-image: url(../IMG/aporte-comunidad1.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #16A630 0%, #A6168C 100%) 1;
 }
 
 /* ¿Qué son los exploradores? */
 .exploradores-img {
-    background-image: url(../img/exploradores1.jpg);
+    background-image: url(../IMG/exploradores1.jpg);
     border: 10px solid transparent;
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #1627a6 0%, #cfe1d3 100%) 1;
@@ -216,7 +216,7 @@
 
 /* ¿Por qué es importante mantener activos a tus exploradores? */
 .activar-img {
-    background-image: url(../img/activar-exploradores1.jpg);
+    background-image: url(../IMG/activar-exploradores1.jpg);
     /* Creas el borde */
     border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
 }
